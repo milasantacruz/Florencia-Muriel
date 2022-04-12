@@ -3,9 +3,14 @@
     width: 100%;
     height: 8vh;
     padding-top: 0.5em;
-    background-color:#ffffff00;
+    background-color:#ffffff00!important;
 }
 
 .florName{
     font-family: 'Bebas Neue', cursive;
+    font-size: 3em;
+}
+
+.navbar-end .navbar-item{
+    font-size: 1.2em;
 }

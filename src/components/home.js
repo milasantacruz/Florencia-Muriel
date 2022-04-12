@@ -40,8 +40,6 @@ const data = useStaticQuery(graphql`
 
   console.log(data.allFile.nodes[0].publicURL)
     return (
-        <div className="columns home">
-
        <div className="reelContainer">
        <video
             className="videoReel"
@@ -56,13 +54,14 @@ const data = useStaticQuery(graphql`
                 src={data.allFile.nodes[0].publicURL}
                 type="video/mp4"
               />
-          </video></div> 
+          </video>
+            {/* <div id="reelContainer" dangerouslySetInnerHTML={{ __html: responseIframe }} /> */}
+          </div> 
           
            
-          {/* <div id="reelContainer" dangerouslySetInnerHTML={{ __html: responseIframe }} /> */}
+        
 
 
-        </div>
     );
 }
 
