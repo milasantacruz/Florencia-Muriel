@@ -58,7 +58,7 @@ const Navbar = () => {
                             <AnchorLink href="#sectionMotion" >
                                 <a className="navbar-item">Motion Graphics</a>
                             </AnchorLink>
-                            <AnchorLink href="sectionLogo" >
+                            <AnchorLink href="#sectionLogo" >
                                 <a className="navbar-item">Logo Desing</a>
                             </AnchorLink>
                         </div>
