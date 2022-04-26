@@ -3,7 +3,7 @@ import "./section1.scss"
 
 const Section1 = ({children}) => {
     return (
-        <div classNAme="section1">
+        <div className="section1">
             {children}
         </div>
     );

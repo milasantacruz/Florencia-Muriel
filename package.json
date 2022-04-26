@@ -22,11 +22,15 @@
     "gatsby-source-filesystem": "^4.11.1",
     "gatsby-source-strapi": "^1.0.3",
     "gatsby-transformer-sharp": "^4.11.0",
+    "gsap": "^3.10.4",
     "node-sass": "^6.0.1",
     "prop-types": "^15.8.1",
     "react": "^17.0.1",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^17.0.1",
+    "react-gsap": "^3.2.1",
     "react-helmet": "^6.1.0",
+    "react-page-scroller": "^2.2.1",
     "sass": "^1.49.11"
   },
   "devDependencies": {
