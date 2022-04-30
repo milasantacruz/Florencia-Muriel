@@ -20,7 +20,7 @@ const Navbar = () => {
 
                 {/* LOGO */}
                 <div className="navbar-item">
-                    <h1 className="florName">FlorenciMuriel</h1>
+                    <h1 className="florName">FlorenciaMuriel</h1>
                 </div>
 
                 {/* NAVBAR-BBURGER */}

@@ -1,4 +1,5 @@
 import React,{ useState, useEffect, useRef} from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import {StaticImage} from "gatsby-plugin-image"
 import gsap from "gsap"
 import "./explainerVideos.scss"
@@ -34,6 +35,7 @@ const CharacterAnimation = () => {
 
     return (
         <div id="sectionCharacter" className="category">
+            <AnchorLink href="#character" >
             <div 
             onClick={handleClick}
             className="category-title">
@@ -45,10 +47,11 @@ const CharacterAnimation = () => {
                 className="imgCat"
                 />
             </div>
+            </AnchorLink>
             <div 
             ref={elem=>{actor.current = elem}}
             className="containerVideos">
-                <div className="explainerContainer">
+                <div id="character" className="explainerContainer">
                     {characterVideos.map(node =>{
                         var iFrame = JSON.parse(node.oembed).rawData.html
                         console.log()

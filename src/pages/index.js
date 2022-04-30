@@ -7,7 +7,6 @@ import CharacterAnimation from "../components/characterAnimation"
 import MotionGraphics from "../components/motionGraphics"
 import Logos from "../components/logos"
 import Section1 from "../components/section1"
-import ContactModal from "../components/contacto"
 import Layout from "../components/layout"
 import "./index.scss"
 import Seo from "../components/seo"
@@ -15,6 +14,7 @@ import Seo from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
+    
     <Section1>
       <Home/>
     </Section1>

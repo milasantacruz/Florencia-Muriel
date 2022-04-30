@@ -28,7 +28,7 @@ const Home = () => {
 
 const data = useStaticQuery(graphql`
     {
-      allFile(filter: {relativePath: {eq: "AnimationReel2019.mp4"}}) {
+      allFile(filter: {relativePath: {eq: "AnimationReel2021.mp4"}}) {
         nodes {
           id
           publicURL
@@ -46,8 +46,6 @@ const data = useStaticQuery(graphql`
             height="100%"
             width="100%"
             loop
-            muted
-            autoPlay
             controls
             >
               <source

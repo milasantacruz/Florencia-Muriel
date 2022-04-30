@@ -1,5 +1,6 @@
 import React,{ useState, useEffect, useRef} from 'react';
 import {StaticImage} from "gatsby-plugin-image"
+import AnchorLink from "react-anchor-link-smooth-scroll"
 import gsap from "gsap"
 import "./explainerVideos.scss"
 import useLogosquery from "../hooks/logos"
@@ -32,6 +33,7 @@ const Logos = () => {
     },[active])
     return (
         <div id="sectionLogo" className="category">
+            <AnchorLink href={'#logos'} >
             <div 
             onClick={handleClick}
             className="category-title">
@@ -43,8 +45,9 @@ const Logos = () => {
                 className="imgCat"
                 />
             </div>
+            </AnchorLink>
             <div ref={elem=>{actor.current = elem}}  className="containerVideos">
-                <div className="explainerContainer">
+                <div id="logos" className="explainerContainer">
                     {logosVideos.map(node =>{
                         var iFrame = JSON.parse(node.oembed).rawData.html
                         console.log()

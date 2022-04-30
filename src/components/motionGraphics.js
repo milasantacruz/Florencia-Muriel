@@ -1,5 +1,6 @@
 import React,{ useState, useEffect, useRef} from 'react';
 import {StaticImage} from "gatsby-plugin-image"
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import gsap from "gsap"
 import "./explainerVideos.scss"
 import useMotionquery from "../hooks/motion"
@@ -35,6 +36,7 @@ const MotionGraphics = () => {
         id="sectionMotion"
         onClick={handleClick}
         className="category">
+            <AnchorLink href="#motion" >
             <div className="category-title">
             <StaticImage
                 src="../images/motion.svg"
@@ -44,10 +46,11 @@ const MotionGraphics = () => {
                 className="imgCat"
                 />
             </div>
+            </AnchorLink>
             <div 
             ref={elem=>{actor.current = elem}}
             className="containerVideos">
-                <div className="explainerContainer">
+                <div id="motion" className="explainerContainer">
                     {motionVideos.map(node =>{
                         var iFrame = JSON.parse(node.oembed).rawData.html
                         console.log()

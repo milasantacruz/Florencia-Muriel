@@ -13,7 +13,7 @@ const ExplainerVideos = () => {
     var tl = useRef();
 
     useEffect(()=>{
-        console.log("jih")
+        
         tl.current = gsap.timeline({});
         tl.current.to(actor.current, {
             opacity:0,
