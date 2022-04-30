@@ -35,3 +35,21 @@
     width: auto;
     height: auto;
 }
+
+@media (max-width: 600px){
+    .category{
+        padding:0.8em;
+        margin:auto;
+
+    }
+
+    .imgCat{
+        width:100%;
+    }
+
+    .explainerContainer{
+        display:block;
+        width: auto;
+
+    }
+}

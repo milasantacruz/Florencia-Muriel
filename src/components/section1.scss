@@ -2,3 +2,9 @@
     width:100vw;
     height:100vh;
 }
+
+@media (max-width: 600px){
+    .section1{
+        height:auto;
+    }
+}
