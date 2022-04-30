@@ -12,7 +12,6 @@ const MotionGraphics = () => {
     var tl = useRef();
 
     useEffect(()=>{
-        console.log("jih")
         tl.current = gsap.timeline({});
         tl.current.to(actor.current, {
             opacity:0,
@@ -23,7 +22,6 @@ const MotionGraphics = () => {
     },[])
 
     function handleClick(){
-        console.log("click");
         setActive(!active)
     }
 
@@ -53,7 +51,7 @@ const MotionGraphics = () => {
                 <div id="motion" className="explainerContainer">
                     {motionVideos.map(node =>{
                         var iFrame = JSON.parse(node.oembed).rawData.html
-                        console.log()
+                        
                         return(
                             <div className="exIframe" dangerouslySetInnerHTML={{ __html: iFrame}} /> 
                         

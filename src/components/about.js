@@ -18,8 +18,7 @@ const About = ({about, setAbout}) => {
       }
     }
   `)
-  console.log(data.strapiAboutImage)
-
+  
   var dato = data.strapiAboutImage;
   var img = getImage(data.strapiAboutImage.Florencia[0].localFile);
 

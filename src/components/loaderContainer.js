@@ -13,7 +13,6 @@ const Loadercontainer = () => {
     }
 
     function handleClick(){
-        console.log("inner")
         setActive(true)
     }
     

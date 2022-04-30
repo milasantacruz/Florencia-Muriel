@@ -21,8 +21,6 @@ const Contacto = ({contacto, setContacto}) => {
       toSend,
       'c4_OLeTG-ei8-Qw3b'
     ).then((response)=>{
-      console.log('SUCCESS!', response.status, response.text);
-      console.log(iform);
       iform.current.reset();
   
     }).catch((err)=>{

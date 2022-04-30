@@ -13,6 +13,16 @@ const Navbar = () => {
     function handleAbout(){
         setAbout(true)
     }
+
+    const [click, setClick] = useState(false);
+    const[burger, setBurger] = useState(false);
+
+    function handleClick(){
+        setClick(!click)
+    }
+    
+    var navmenu = click? "navbar-menu is-active" : "navbar-menu"
+    var navburger = click? "navbar-burger is-active" : "navbar-burger"
     return (
         <div>
         <nav className="navbar" role="navigation" aria-label="main navigation" >
@@ -24,14 +34,14 @@ const Navbar = () => {
                 </div>
 
                 {/* NAVBAR-BBURGER */}
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <a onClick={handleClick} role="button" class={navburger} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
                 
             </div>
-            <div className="navbar-menu">
+            <div className={navmenu}>
                 <div className="navbar-start">
 
                 </div>

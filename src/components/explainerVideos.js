@@ -24,7 +24,6 @@ const ExplainerVideos = () => {
     },[])
 
     function handleClick(){
-        console.log("click");
         setActive(!active)
     }
 
@@ -52,7 +51,6 @@ const ExplainerVideos = () => {
             <div  id="explainer" className="explainerContainer">
                 {explainerVideos.map(node =>{
                     var iFrame = JSON.parse(node.oembed).rawData.html
-                    console.log()
                     return(
                         <div className="exIframe" dangerouslySetInnerHTML={{ __html: iFrame}} /> 
                     
