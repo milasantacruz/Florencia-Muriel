@@ -11,6 +11,7 @@ const Loadercontainer = () => {
     if (windowGlobal){
         DynamicModule = loadable((props) => loadable(() => import("./sketchLoader"),{ssr:true}));
     }
+    const MyLoadable = loadable(() => import("./sketchLoader"),{ssr:true});
 
     useEffect(()=>{
         if(DynamicModule){
@@ -38,7 +39,7 @@ const Loadercontainer = () => {
         onClick={handleClick}
          >
             {isBrowser ?
-            <SketchLoader/> :
+            <MyLoadable/> :
             <div></div>            
             }
         </div>
