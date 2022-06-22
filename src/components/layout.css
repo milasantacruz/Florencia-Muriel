@@ -19,6 +19,20 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
+
+
+.loaderHidden{
+  height: auto;
+  overflow-y:hidden
+}
+
+.loaderVisible{
+  height: 100vh;
+  overflow-y:hidden
+}
+
+
+
 article,
 aside,
 details,

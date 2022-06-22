@@ -59,18 +59,23 @@ const Navbar = () => {
                             Work
                         </a>
                         <div className="navbar-dropdown is-right">
+
                             <AnchorLink href="#sectionCharacter">
                                 <a  className="navbar-item">Character Animation</a>
                             </AnchorLink>
+
                             <AnchorLink href="#sectionExplainer">
                                 <a  className="navbar-item">Explainer Video</a>
                             </AnchorLink>
+
                             <AnchorLink href="#sectionMotion" >
                                 <a className="navbar-item">Motion Graphics</a>
                             </AnchorLink>
+
                             <AnchorLink href="#sectionLogo" >
-                                <a className="navbar-item">Logo Desing</a>
+                                <a className="navbar-item">Logo Design</a>
                             </AnchorLink>
+
                         </div>
                     </div>
                 </div>

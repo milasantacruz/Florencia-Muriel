@@ -7,22 +7,14 @@
 
  import React,{ useState, useEffect, useRef}  from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import LoaderContainer from "./loaderContainer"
 import gsap from "gsap"
 import "./layout.css"
 import Navbar from "./navbar"
 import Redes from "./redes"
+
+
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
 
 var [active, setActive] = useState(true);
 var actor = useRef();
@@ -43,12 +35,17 @@ function handleClick(){
   console.log("click")
 }
 
+var loaderClass = active? "loaderVisible" : "loaderHidden"
 useEffect(()=>{
   tl.current.reversed(active);
 },[active])
 
+
+
   return (
-    <>
+    <div 
+    className={loaderClass}
+    >
     <div 
       ref={elem => {actor.current = elem}}
       onClick={handleClick}
@@ -61,7 +58,7 @@ useEffect(()=>{
       <main>
         {children}
       </main>
-    </>
+    </div>
   )
 }
 
