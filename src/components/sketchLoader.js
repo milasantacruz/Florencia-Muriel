@@ -39,8 +39,8 @@ const Sketchloader = () => {
         p5.noStroke();
         p5.ellipse(x, y, 700);
 
-        p5.fill(72,95,199)
-        p5.text("Click to continue!", -100, p5.windowHeight-500)
+        // p5.fill(72,95,199)
+        // p5.text("Click to continue!", -100, p5.windowHeight-500)
     }
     return (
         <Sketch setup={setup} draw={draw} windowResized={windowResized}/>

@@ -3,28 +3,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import "./home.scss"
 const Home = () => {
 
-//     const data = useStaticQuery(graphql`
-//     {
-//       allStrapiExplainerVideos {
-//         nodes {
-//           titulo
-//           descripcion
-//           oembed
-//           video {
-//             localFile {
-//               publicURL
-//             }
-//           }
-//         }
-//       }
-//     }
-//   `)
-
-//   var response = JSON.parse(data.allStrapiExplainerVideos.nodes[1].oembed)
-//   var responseUrl = response.url;
-//   var responseIframe = response.rawData.html
-//   console.log(response)
-
 
 const data = useStaticQuery(graphql`
     {

@@ -39,7 +39,13 @@ const Loadercontainer = () => {
         onClick={handleClick}
          >
             {isBrowser ?
-            <MyLoadable/> :
+            
+            <div className="loaderWrapper">
+                <MyLoadable/>
+                <p>Click to Continue!</p>
+            </div>
+            
+            :
             <div></div>            
             }
         </div>

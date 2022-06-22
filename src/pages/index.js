@@ -13,16 +13,16 @@ import Seo from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
-    
-    <Section1>
-      <Home/>
-    </Section1>
-    <ExplainerVideos />
-    <CharacterAnimation/>
-    <MotionGraphics/>
-    <Logos/>
-  </Layout>
+  <Seo title="Home" />
+  
+  <Section1>
+    <Home/>
+  </Section1>
+  <ExplainerVideos />
+  <CharacterAnimation/>
+  <MotionGraphics/>
+  <Logos/>
+</Layout>
 )
 
 export default IndexPage

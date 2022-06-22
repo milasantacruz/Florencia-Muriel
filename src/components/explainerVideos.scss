@@ -28,6 +28,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     width: 80%;
     grid-gap: 5em;
+    text-align: center;
 
 }
 
@@ -39,7 +40,7 @@
 @media (max-width: 600px){
     .category{
         padding:0.8em;
-        margin:auto;
+        margin:20px;
 
     }
 
@@ -52,5 +53,9 @@
         display:block;
         width: auto;
 
+    }
+
+    .containerVideos{
+        margin: 0 auto;
     }
 }
