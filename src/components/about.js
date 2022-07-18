@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useCallback} from 'react';
 import { useStaticQuery, graphql } from "gatsby"
 import {GatsbyImage, getImage} from 'gatsby-plugin-image'
 const About = ({about, setAbout}) => {
@@ -18,6 +18,24 @@ const About = ({about, setAbout}) => {
       }
     }
   `)
+
+  
+  const escFunction = useCallback((event) => {
+    if (event.key === "Escape") {
+      console.log("esc")
+      setAbout(false)
+    }
+  }, [about]);
+
+  useEffect(()=>{
+      
+      document.addEventListener("keydown", escFunction, false);
+
+      return()=>{
+       
+        document.removeEventListener("keydown", escFunction, false);
+      }
+  },[])
   
   var dato = data.strapiAboutImage;
   var img = getImage(data.strapiAboutImage.Florencia[0].localFile);

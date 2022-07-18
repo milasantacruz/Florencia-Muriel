@@ -33,10 +33,12 @@ const ExplainerVideos = () => {
     },[active])
         
     return (
-        <div id="sectionExplainer" className="category">
+        <div 
+        onClick={handleClick}
+        id="sectionExplainer" 
+        className="category">
             <AnchorLink href="#explainer" >
-            <div 
-            onClick={handleClick}
+            <div
             className="category-title">
             <StaticImage
                 src="../images/exp.svg"

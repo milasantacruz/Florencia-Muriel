@@ -30,10 +30,12 @@ const Logos = () => {
         tl.current.reversed(active);
     },[active])
     return (
-        <div id="sectionLogo" className="category">
+        <div 
+        onClick={handleClick}
+        id="sectionLogo" 
+        className="category">
             <AnchorLink href={'#logos'} >
             <div 
-            onClick={handleClick}
             className="category-title">
             <StaticImage
                 src="../images/logo.svg"

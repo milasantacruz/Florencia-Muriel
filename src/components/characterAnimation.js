@@ -34,10 +34,12 @@ const CharacterAnimation = () => {
     },[active])
 
     return (
-        <div id="sectionCharacter" className="category">
+        <div 
+        onClick={handleClick}
+        id="sectionCharacter" 
+        className="category">
             <AnchorLink href="#character" >
             <div 
-            onClick={handleClick}
             className="category-title">
             <StaticImage
                 src="../images/char.svg"
