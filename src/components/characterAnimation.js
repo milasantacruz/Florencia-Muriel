@@ -38,7 +38,6 @@ const CharacterAnimation = () => {
         onClick={handleClick}
         id="sectionCharacter" 
         className="category">
-            <AnchorLink href="#character" >
             <div 
             className="category-title">
             <StaticImage
@@ -49,7 +48,6 @@ const CharacterAnimation = () => {
                 className="imgCat"
                 />
             </div>
-            </AnchorLink>
             <div 
             ref={elem=>{actor.current = elem}}
             className="containerVideos">

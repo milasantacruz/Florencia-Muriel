@@ -34,7 +34,6 @@ const Logos = () => {
         onClick={handleClick}
         id="sectionLogo" 
         className="category">
-            <AnchorLink href={'#logos'} >
             <div 
             className="category-title">
             <StaticImage
@@ -45,7 +44,6 @@ const Logos = () => {
                 className="imgCat"
                 />
             </div>
-            </AnchorLink>
             <div ref={elem=>{actor.current = elem}}  className="containerVideos">
                 <div id="logos" className="explainerContainer">
                     {logosVideos.map(node =>{

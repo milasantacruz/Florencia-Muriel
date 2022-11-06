@@ -37,7 +37,6 @@ const ExplainerVideos = () => {
         onClick={handleClick}
         id="sectionExplainer" 
         className="category">
-            <AnchorLink href="#explainer" >
             <div
             className="category-title">
             <StaticImage
@@ -48,7 +47,6 @@ const ExplainerVideos = () => {
                 className="imgCat"
                 />
             </div>
-            </AnchorLink>
             <div ref={elem=>{actor.current = elem}} className="containerVideos">
             <div  id="explainer" className="explainerContainer">
                 {explainerVideos.map(node =>{

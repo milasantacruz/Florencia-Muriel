@@ -34,7 +34,6 @@ const MotionGraphics = () => {
         id="sectionMotion"
         onClick={handleClick}
         className="category">
-            <AnchorLink href="#motion" >
             <div className="category-title">
             <StaticImage
                 src="../images/motion.svg"
@@ -44,7 +43,6 @@ const MotionGraphics = () => {
                 className="imgCat"
                 />
             </div>
-            </AnchorLink>
             <div 
             ref={elem=>{actor.current = elem}}
             className="containerVideos">
